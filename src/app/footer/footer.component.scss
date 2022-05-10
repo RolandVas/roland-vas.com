@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.icon {
+
+    img{
+        height: 50px;
+        margin-left: 32px;
+    }
+}
+
+.bg-container-footer {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

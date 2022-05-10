@@ -1,0 +1,43 @@
+<div class="bg1">
+    <div class="bg-container margin">
+
+        <h2 id="projects">
+            My work
+        </h2>
+
+        <div class="work-container w100">
+            <div *ngFor="let work of header; let i = index;" class="work-container2">
+
+                <div class="icon">
+                    <img src="/assets/img/code-white.png">
+                    <img src="/assets/img/web-white.png">
+                </div>
+
+                
+                    <div class="work">
+
+                        <div class="content">
+                            <div class="text">
+                                <h3>
+                                    {{ work }}
+                                </h3>
+                                <span>
+                                    Ladet verschiedene Monstern mit fähigkeiten und bildern aus einen rest API <br>
+                                    <br>
+                                </span>
+                                <span>JavaScript, API, 2022/02/15</span>
+                            </div>
+                            <div class="img">
+                                <img src="/assets/img/pokedex.webp">
+                            </div>
+                        </div>
+
+                    </div>
+                
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

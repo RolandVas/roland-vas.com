@@ -1,0 +1,16 @@
+<div class="bg2">
+    <div class="bg-container margin">
+        <h2>
+            My Skills
+        </h2>
+        <div class="skills-container">
+            <div *ngFor="let skill of skills; let i = index;" class="skill">
+                <div class="icon">
+                    <img src="/assets/icon/{{ skills_img[i] }}">
+                </div>
+                <span>{{ skill }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
