@@ -1,0 +1,21 @@
+<div class="bg1">
+    <div class="bg-container margin">
+        <div class="contact">
+            <div class="contact-text">
+                <h2 id="contact">Contact me</h2>
+                <span>Now that you know a lot about me, let me know if you are intrested to work with me. Get in touch via the form below, or by emailing rolandvas@hotmail.com</span>
+            </div>
+            <form #form action="https://www.roland-vas.com/send_mail.php" method="POST">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Enter your name">
+                <span>Email adress</span>
+                <input type="email" name="email" placeholder="Enter your Email address">
+                <span>Message</span>
+                <textarea name="message" placeholder="Enter your message"></textarea>
+                <div class="btn">
+                    <button type="submit" (click)="form.submit()">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

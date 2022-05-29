@@ -1,0 +1,42 @@
+<div class="bg1">
+    <div class="bg-container margin">
+
+        <h2 id="projects">
+            My projects
+        </h2>
+
+        <div class="work-container w100">
+            <div *ngFor="let work of header; let i = index;" class="work-container2">
+
+                <div class="icon">
+                    <a href="{{ git[i] }}"> <img src="/assets/img/code-white.png"> </a>
+                    <a href="{{ url[i] }}"> <img src="/assets/img/web-white.png"> </a>
+                </div>
+
+
+                <div class="work">
+
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                {{ work }}
+                            </h3>
+                            <span>
+                                {{ description[i] }} <br>
+                                <br>
+                            </span>
+                            <span style="color: #dae1f8;">Tool: {{ tool[i] }} </span> <br> 
+                        </div>
+                        <div class="img">
+                            <img src="/assets/img/{{ img[i] }}">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
