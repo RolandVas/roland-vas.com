@@ -1,21 +1,23 @@
-<div class="bg1">
+<div id="contact" class="bg1">
     <div class="bg-container margin">
         <div class="contact">
             <div class="contact-text">
-                <h2 id="contact">Contact me</h2>
+                <h2 >Contact me</h2>
                 <span>Now that you know a lot about me, let me know if you are intrested to work with me. Get in touch via the form below, or by emailing rolandvas@hotmail.com</span>
             </div>
-            <form #form action="https://www.roland-vas.com/send_mail.php" method="POST">
+            <form #form action="https://www.roland-vas.com/send_mail.php" method="POST" [formGroup]="email" (ngSubmit)="onSubmit()">
                 <span>Name</span>
-                <input type="text" name="name" placeholder="Enter your name">
+                <input type="text" name="name" formControlName="name" placeholder="Enter your name" required>
                 <span>Email adress</span>
-                <input type="email" name="email" placeholder="Enter your Email address">
+                <input type="email" name="email" formControlName="email" placeholder="Enter your Email address" required>
                 <span>Message</span>
-                <textarea name="message" placeholder="Enter your message"></textarea>
+                <textarea name="message" formControlName="message" placeholder="Enter your message" required></textarea>
                 <div class="btn">
-                    <button type="submit" (click)="form.submit()">Send</button>
+                    <button [disabled]="!email.valid" type="submit" value='submit' (click)="form.submit()">Send</button>
                 </div>
+                <span class="email-send" *ngIf="isSubmitted">Your E-mail was send!</span>
             </form>
         </div>
+
     </div>
 </div>

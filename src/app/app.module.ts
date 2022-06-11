@@ -20,7 +20,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { IndexComponent } from './index/index.component';
-
+import { ReactiveFormsModule } from '@angular/forms'; 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -44,6 +46,9 @@ import { IndexComponent } from './index/index.component';
     BrowserAnimationsModule,
     MatIconModule,
     FormsModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
     HttpClientModule,
     MatToolbarModule,
     MatExpansionModule,

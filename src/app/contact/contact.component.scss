@@ -1,11 +1,9 @@
 .bg-container {
-    
+  span {
+    color: #8892b0;
+  }
 
-    span {
-        color: #8892b0;
-    }
-
-    form {
+  form {
     min-width: 50%;
     display: flex;
     justify-content: center;
@@ -15,97 +13,113 @@
     margin-bottom: 50px;
 
     span {
-    margin-top: 16px;
-    margin-bottom: 16px;
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
 
     input {
-        height: 32px;
-        background-color: #2E3544;
-        color: white;
-        border: none;
+      height: 32px;
+      background-color: #2e3544;
+      color: white;
+      border: none;
+
+      &.ng-touched,
+      &.ng-dirty &.ng-invalid {
+        border: red 1px solid;
+      }
+
+      &.ng-valid {
+        border: unset;
+      }
     }
 
-    input:focus{
-        outline: none;
+    input:focus {
+      outline: none;
     }
 
     input::placeholder {
-        color: #C5C6C7;
-        padding-left: 8px;
-        font-size: 15px;
+      color: #c5c6c7;
+      padding-left: 8px;
+      font-size: 15px;
     }
 
-    input[type=name] {
-        font-size: 15px;
-      }
-
-    input[type=name] {
-        font-size: 15px;
-      }
-
-      input:focus::placeholder {
-        color: transparent;
-      }
-
-      textarea:focus::placeholder {
-        color: transparent;
-      }
-
-      textarea{
-        font-family: inherit;
-        max-width: 100%;
-        color: white;
-        font-size: 15px;
-        height: 150px;
-        box-sizing: border-box;
-        background-color: #2E3544;
-        border: none;
-        resize: none;
-      }
-
-      textarea:focus{
-        outline: none;
+    input[type="name"] {
+      font-size: 15px;
     }
 
-    textarea[type=text] {
-        font-size: 15px;
+    input[type="name"] {
+      font-size: 15px;
+    }
+
+    input:focus::placeholder {
+      color: transparent;
+    }
+
+    textarea:focus::placeholder {
+      color: transparent;
+    }
+
+    textarea {
+      font-family: inherit;
+      max-width: 100%;
+      color: white;
+      font-size: 15px;
+      height: 150px;
+      box-sizing: border-box;
+      background-color: #2e3544;
+      border: none;
+      resize: none;
+
+      &.ng-touched,
+      &.ng-dirty &.ng-invalid {
+        border: red 1px solid;
       }
+
+      &.ng-valid {
+        border: unset;
+      }
+    }
+
+    textarea:focus {
+      outline: none;
+    }
+
+    textarea[type="text"] {
+      font-size: 15px;
+    }
 
     textarea::placeholder {
-        color: #C5C6C7;
-        padding-left: 8px;
-        font-size: 15px;
+      color: #c5c6c7;
+      padding-left: 8px;
+      font-size: 15px;
     }
 
-    
-        button {
-            font-size: 1.1rem;
-            border-radius: 50px;
-            margin-top: 24px;
-            width: 150px;
-            height: 40px;
-            border: 0;
-            display: inline-block;
-            background-color: transparent;
-            color: #8892b0;
-            border: 3px solid #64ffda;
-            transition: all 250ms;
-            cursor: pointer;
-    
-            &:hover {
-                background-color: #64ffda;
-                color: #182029;
-            }
-        }
+    button {
+      font-size: 1.1rem;
+      border-radius: 50px;
+      margin-top: 24px;
+      width: 150px;
+      height: 40px;
+      border: 0;
+      display: inline-block;
+      background-color: transparent;
+      color: #8892b0;
+      border: 3px solid #64ffda;
+      transition: all 250ms;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #64ffda;
+        color: #182029;
+      }
     }
+  }
 }
 
-
 .btn {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact {
@@ -119,16 +133,19 @@
   padding-right: 100px;
 }
 
+.email-send {
+  text-align: center;
+}
 
-@media(max-width: 750px) {
-
+@media (max-width: 750px) {
   .contact {
     flex-direction: column;
   }
 
   .contact-text {
-     padding-right: 0px;
-     width: 100%;
+    padding-right: 0px;
+    width: 100%;
+
     span {
       width: 100%;
     }

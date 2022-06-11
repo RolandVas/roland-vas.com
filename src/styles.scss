@@ -4,6 +4,19 @@ body {
     
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background: #ddd; 
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #666; 
+  }
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -53,6 +66,7 @@ h2 {
     color: #CCD6F6;
     font-size: 36px;
     margin-bottom: 60px;
+    margin-top: 0px;
     font-weight: 600;
 }
 

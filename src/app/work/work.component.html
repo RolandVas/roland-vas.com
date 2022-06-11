@@ -1,7 +1,7 @@
-<div class="bg1">
+<div id="projects" class="bg1">
     <div class="bg-container margin">
 
-        <h2 id="projects">
+        <h2 >
             My projects
         </h2>
 
@@ -9,8 +9,8 @@
             <div *ngFor="let work of header; let i = index;" class="work-container2">
 
                 <div class="icon">
-                    <a href="{{ git[i] }}"> <img src="/assets/img/code-white.png"> </a>
-                    <a href="{{ url[i] }}"> <img src="/assets/img/web-white.png"> </a>
+                    <a href="{{ git[i] }}" target="_blank"> <img src="/assets/img/code-white.png"> </a>
+                    <a href="{{ url[i] }}" target="_blank"> <img src="/assets/img/web-white.png"> </a>
                 </div>
 
 
@@ -28,7 +28,7 @@
                             <span style="color: #dae1f8;">Tool: {{ tool[i] }} </span> <br> 
                         </div>
                         <div class="img">
-                            <img src="/assets/img/{{ img[i] }}">
+                            <a href="{{ url[i] }}" target="_blank"> <img src="/assets/img/{{ img[i] }}"> </a>
                         </div>
                     </div>
 
